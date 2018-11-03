@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="client.js"></script>
+
+    <meta charset="utf-8">
+    <title>Hackathon site</title>
+  </head>
+  <style>
+    .video-container{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column
+    }
+  </style>
+
+  <body>
+    <div class="video-container">
+
+
+    <video id="video" width="500" height="500" autoplay>
+      <source id="source" src="videos/default.mp4" type="video/mp4">
+    </video>
+
+
+    <form ref='uploadForm'
+         id='uploadForm'
+         action='/upload'
+         method='post'
+         encType="multipart/form-data">
+           <input type="file" name="sampleFile" />
+           <input type='submit' value='Upload!' />
+       </form>
+    </div>
+
+  </body>
+</html>
