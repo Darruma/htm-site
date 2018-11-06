@@ -6,33 +6,33 @@
     <meta charset="utf-8">
     <title>Hackathon site</title>
   </head>
-  <style>
-    .video-container{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      flex-direction:column
-    }
-  </style>
+
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  
 
   <body>
-    <div class="video-container">
+      <form ref='uploadForm'
+      id='uploadForm'
+      action='/upload'
+      method='post'
+      encType="multipart/form-data">
+        <input type="file" name="sampleFile" />
+        <input type='submit' value='Upload!' />
+    </form>
+ </div>
 
-
-    <video id="video" width="500" height="500" autoplay>
-      <source id="source" src="videos/default.mp4" type="video/mp4">
-    </video>
-
-
-    <form ref='uploadForm'
-         id='uploadForm'
-         action='/upload'
-         method='post'
-         encType="multipart/form-data">
-           <input type="file" name="sampleFile" />
-           <input type='submit' value='Upload!' />
-       </form>
+    <div class="videos-container">
+      <div className='video-container'> 
+          <video id="current-video" width="500" height="400" autoplay>
+               <source id="source" src="videos/default.mp4" type="video/mp4">
+          </video>
+          <div class='data-box'>
+            Video
+          </div>
+      </div>
     </div>
+
+   
 
   </body>
 </html>

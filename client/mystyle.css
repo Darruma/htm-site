@@ -1,0 +1,26 @@
+.videos-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column
+  }
+
+.video-container
+{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.51);
+}
+
+.data-box
+{
+    height: 100px;
+    width:500px;
+    text-align: center;
+    box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.51);
+}
+#uploadForm
+{
+    text-align: center;
+}
