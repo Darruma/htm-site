@@ -5,10 +5,9 @@
 
     <meta charset="utf-8">
     <title>Hackathon site</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
   </head>
-
-  <link rel="stylesheet" type="text/css" href="mystyle.css">
-  
 
   <body>
       <form ref='uploadForm'
@@ -23,10 +22,13 @@
 
     <div class="videos-container">
       <div className='video-container'> 
-          <video id="current-video" width="500" height="400" autoplay>
+        <div class='video'>
+          <video id="current-video" width="500" height="300" autoplay muted>
                <source id="source" src="videos/default.mp4" type="video/mp4">
           </video>
-          <div class='data-box'>
+        </div>
+      
+          <div class='data-box source'>
             Video
           </div>
       </div>
